@@ -1,0 +1,151 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ background-color: #f0f0f0;
+ color: #333;
+}
+
+header {
+    background-color: #4caf50;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow:  0 2px 4px rgba(0, 0, 0.1);
+}
+
+header.logo {
+    font-size:  1.8rem;
+    font-weight:  bold;   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ nav ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+ }
+ nav ul li{
+   margin: 1rem;
+ }
+ 
+ nav ul li a{
+    color: #333;
+    text-decoration: solid;
+    font-weight: 500;
+    transition: color 0.3 ease;
+ }
+
+ nav ul li a:hover{
+    color: #f5f5ff;
+ }
+ section {
+    padding: 2rem;
+    text-align: center;
+ }
+ .hero-section{
+    background-color: #e0f7fa;
+    color: #00696c;
+ }
+ .hero-section h2{
+    font-size:  2.5rem;
+    margin-bottom: 1rem;
+ }
+
+ .hero-section p{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+ }
+ .about-section {
+    background-color: #e0f7fa;
+    color: #00696c;
+ }
+
+ .about-section h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+ }
+
+ .about-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+ }
+ .contact-section {
+    background-color: #e0f7fa;
+    color: #00696c;
+ }
+
+ .contact-section h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+ }
+
+ .contact-section p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+ }
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow:0 2px  4px rgba(0, 0, 0.1);
+}
+@media (max-width:768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+section { 
+    padding: 1.5rem;
+}
+.hero-section h2,
+.about-section h2,
+.contact-section h2 {
+ font-size: 1rem;   
+}
+ .hero-section  p,
+ .about-section p,
+ .contact-section p {
+    font-size: 1rem;
+ }
+
+ @media (max-width 480px)
+{
+    .logo {
+        font-size: 1.5rem;
+    }
+}
+
+nav ul li a {
+    font-size: 0.9rem;
+}
+section {
+    padding:  1rem;
+}
+
+.hero-section h2,
+.about-section h2,
+.contact-section  h2 {
+    font-size: 1.75rem;
+}
+
+.hero-section p,
+.about-section p,
+.contact-section  p {
+    font-size: 0.9rem;
+}
